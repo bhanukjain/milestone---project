@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E GURU</title>
+  <style>
+                @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap');
+
+    body{
+      font-family:'PT Sans Caption', sans-serif;
+      background: #fefbfb;
+      max-width: 1250px;
+      width: 100%;
+      height: auto;
+    }
+    .navbar > h1{
+      font-weight: bold;
+    }
+    .navigation{
+      max-width: 1200px;
+      width: 100%;
+      height: auto;
+    }
+    .navbar{
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+
+    }
+    .image{
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      align-items: center;
+    }
+    .navbar.image.norm{
+      height: 30px;
+      width: 30px;
+    }
+    .links{
+      display: flex;
+      gap: 50px;
+    }
+    .l{
+        text-decoration: none;
+        color:#8f8c87;
+        font-weight: 500;
+       }
+       .li{
+        text-decoration: none;
+        color: hwb(16 10% 9%);
+        font-weight: 600;
+       }
+       .b{
+        background-color: #ffffff;
+        border: 1px solid black;
+        padding: 15px 40px;
+       position: relative;
+       right: -70px;
+      }
+      .main{
+        margin-left: 100px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .image-container img {
+        position: absolute;
+        top: 150px;
+        left: 700px;
+
+      }
+      img:nth-child(1){
+        z-index: 2;
+        top:215px ;
+        left:865px ;
+      }
+      img:nth-child(2){
+        z-index: 1;
+        top: 200px;
+        left: 800px;
+        height: 320px;
+        width: 320px;
+
+      }
+      img:nth-child(3) {
+            z-index: 3;
+            top: 180px;
+            left: 810px;
+            height: 320px;
+            width: 320px;
+          }
+          .man{
+            height: 300px;
+            width: 210px;
+          }
+          img:nth-child(5){
+            top: 550px;
+            left: 800px;
+          }
+          .green_arrow{
+            height: 25px;
+            width: 25px;
+        }
+        img:nth-child(4){
+            left: 750px;
+           
+          }
+          .orange_arrow{
+            height: 25px;
+            width: 25px;
+        }
+        img:nth-child(6){
+           top: 500px;
+            left: 1150px;
+          }
+          .orage_ring{
+            height: 20px;
+            width: 20px;
+        }
+        img:nth-child(7){
+            top: 450px;
+            left: 550px;
+          }
+          .curve-arrow{
+            height: 80px;
+            width: 120px;
+            background-color: #ffffff;
+        }
+        .main .text h1{
+        font-size: 48px;
+        font-weight:bolder ;
+        }
+        .main .text p{
+        color: #8f8c87;
+        border-left: 1px solid gray;
+        margin: 5px;
+        padding: 10px;
+
+    }
+
+        .main .text .main-b{
+            margin: 10px;
+            margin-top: 20px;
+            height: 50px;
+            width: 150px;
+            background-color: #ffffff;
+            border: 1px solid black;
+        }
+        .main .text .main-b1{
+            margin: 10px;
+            margin-top: 20px;
+            height: 50px;
+            width: 150px;
+            background-color:hwb(16 10% 9%);
+            border: none;
+            color: #ffffff;
+            font-weight: 500;
+        }
+
+
+
+        .main .button{
+            display: flex;
+        }
+        .fotter{
+      
+          
+        
+          display:inline-flex;
+          position: absolute;
+          left: 30px;
+          right: -5%;
+          
+         
+          justify-content: space-around;
+          gap: 50px;
+          margin-top: 550px;
+          margin-left: -40px;
+          margin-right: 50px;
+          background-color: #1e2147;
+          padding-top: 50px;
+        padding-left: 70px;
+        color: #ffffff;
+        align-items: center;
+      
+        }
+        .fotter p{
+         
+        font-weight: lighter;
+        font-size: 12px;
+    }
+    .fotter .text h2{
+
+        font-size: 35px;
+    }
+    .fotter .text{ 
+
+        padding-bottom: 50px;
+
+    }
+    .fotter .v1 img{ 
+        background-color:#24b39e;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .fotter .v2 img{ 
+        background-color:hwb(16 10% 9%);
+        padding: 10px 15px;
+        border-radius: 10px;
+    }
+    .fotter .v3 img{
+        background-color:#2f29a3;
+        padding: 12px;
+        border-radius: 10px;
+    }
+    .navigation .navbar .res{ 
+        display: none;
+    }
+    .navigation .navbar .image .logo{ 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    @media (max-width:576px) {
+    
+    .navigation .navbar .image{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .navbar img{
+        height: 30px;
+        width: 30px;
+    }
+     .navigation .navbar .image .res{
+        height: 30px;
+        width: 30px;
+        display: flex;
+        justify-content: space-around;
+     }  
+    .navigation .navbar .links{
+        display: none;
+    }
+    .navigation .navbar .b{
+        display: none;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .main .text h1{
+        font-size: 48px;
+        font-weight:bolder ;    
+    }
+    .main .text p{
+        color: #8f8c87;
+        border-left: 1px solid gray;
+        margin: 5px;
+        padding: 10px;
+    }
+
+    .image-container img {
+        position: absolute; /* Position each image absolutely within the container */
+        top: 520px;
+        left: 85px;
+      }
+      
+      /* Adjust positioning as needed to achieve the desired overlap */
+      img:nth-child(1) {
+        z-index: 2; /* Set the z-index to control which image appears on top */
+        top: 520px;
+        left: 140px;
+     }
+      
+      img:nth-child(2) {
+        z-index: 1;
+        top: 505px;
+        left: 85px;
+        height: 320px;
+        width: 320px;
+      }
+      
+      img:nth-child(3) {
+        z-index: 3;
+        top: 500px;
+        left: 87px;
+        height: 320px;
+        width: 320px;
+      }
+      .man{
+        height: 300px;
+        width: 210px;
+      }
+      img:nth-child(5){
+        top: 850px;
+        left: 60px;
+      }
+    .green_arrow{
+        height: 25px;
+        width: 25px;
+    }
+    .orange_arrow{
+        height: 25px;
+        width: 25px;
+    }
+    img:nth-child(4){
+        left: 70px;
+        top: 460px;
+      }
+    img:nth-child(6){
+        top: 820px;
+        left: 400px;
+      }
+    .orage_ring{
+        height: 20px;
+        width: 20px;
+    }
+    img:nth-child(7){
+        top: 980px;
+        left: 300px;
+      }
+    .curve-arrow{
+        height: 80px;
+        width: 120px;
+        margin-top: -50px;
+        margin-left: 50px;
+        background-color: #ffffff;
+    }
+    
+    .main .text .main-b{
+        margin: 10px;
+        margin-top: 20px;
+        height: 50px;
+        width: 150px;
+        background-color: #ffffff;
+        border: 1px solid black;
+    }
+    .main .text .main-b1{
+        margin: 10px;
+        margin-top: 20px;
+        height: 50px;
+        width: 150px;
+        background-color:hwb(16 10% 9%);
+        border: none;
+        color: #ffffff;
+        font-weight: 500;
+    }
+    .main .text .button{
+        display: flex;
+    }
+    .main .text .button{
+        display: flex;
+    }
+
+   
+    .main .button{
+        display: flex;
+        margin-top: 420px;
+        margin-left: 0px ;
+    }
+    .fotter{
+        display: flex;
+        position: relative;
+       
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-around;
+        gap: 30px;
+        margin-top: 100px;
+        margin-left: -320px;
+        background-color: #1e2147;
+        padding-top: 50px;
+        padding-left:200px;
+        color: #ffffff;
+        align-items: center;
+    }
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="navigation">
+    <nav class="navbar">
+      <div class="image">
+        <img src="./assets/menu-icon.png" class="res" alt="logo">
+        <div class="logo">
+          <img src="./assets/logo.png" class="norm" alt="">
+          <h1>E GURU</h1>
+        </div>
+        <img src="./assets/user-profile.png" class="res" alt="">
+      </div>
+      <div class="links">
+        <a class="li" href="#">Home</a>
+        <a  class="l" href="#">About us</a>
+        <a  class="l" href="#">Features</a>
+        <a  class="l" href="#">How it works</a>
+    </div>
+   <button class="b">Sign Up</button>
+    </nav>
+  </div>
+  <div class="main">
+    <div class="text">
+      <h1>STUDY FROM <br> HOME WITH EXPERT</h1>
+      <p>A learning stystem based on formalised</p>
+      <div class="button">
+        <button class="main-b1">Get Started</button>
+        <button class="main-b">Learn More</button>
+      </div>
+    </div>
+
+    <div class="image-container">
+      <img class="man" src="./assets/main-image.png" alt="image 1" class="man">
+      <img src="./assets/main-image-bg.png" alt="image 2">
+      <img src="./assets/main-image-pattern.png" alt="image 3">
+      <!-- design -->
+      <img src="./assets/orange-arrow.png"  class="orange_arrow" alt="">
+      <img src="./assets/green-arrow.png" class="green_arrow" alt="">
+      <img src="./assets/circle.png" class="orage_ring" alt="">
+      <img src="./assets/curve-arrow.png" class="curve-arrow" alt="">
+    </div>
+    <!-- <div class=" button"> -->
+      <!-- <button class="main-b12">Get Started</button> -->
+      <!-- <button class="main-b2">Learn More</button>  -->
+  <!-- </div> -->
+  <div class="fotter">
+    <div class="text">
+        <h2>
+            WHY WE ARE<br> THE BEST
+        </h2>
+        <P>
+            A learning system based on<br> formalised teaching.....
+        </P>
+    </div>
+    <div class="v1">
+        <img src="./assets/vector3.png" alt="">
+        <h3>EXPERT TEACHER</h3>
+        <P>
+            A learning system based<br> on formalised teaching.
+        </P>
+    </div>
+    <div class="v2">
+        <img src="./assets/vector2.png" alt="">
+        <h3>ONLINE COURSES</h3>
+        <P>
+            A learning system based<br> on formalised teaching.
+        </P>
+    </div>
+    <div class="v3">
+    <img src="./assets/vector1.png" alt="">
+        <h3> 24/7 SUPPORT</h3>
+        <P>
+            A learning system based<br> on formalised teaching.
+        </P>
+    </div>
+
+  </div>
+  
+</body>
+</html>

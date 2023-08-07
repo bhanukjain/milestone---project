@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
+
+        body {
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        body {
+            max-width: 1260px;
+            width: 100%;
+            height: auto;
+        }
+
+        .image-section {
+            background-image: url(./assets/background.png);
+            background-repeat: no-repeat;
+            height: 120vh;
+            width: 100vw;
+            background-size: cover;
+            position: relative;
+            top: -25px;
+            left: -10px;
+        }
+
+        .Front .navbar {
+            display: flex;
+            gap: 300px;
+            margin: 5px 70px;
+
+        }
+
+        .Front .navbar .extra {
+            display: flex;
+            margin-left: 90px;
+            align-items: center;
+            gap: 80px;
+
+        }
+
+        .Front .navbar .extra .links {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            text-decoration: none;
+        }
+
+        .Front .navbar .extra .links .l {
+
+            text-decoration: none;
+        }
+
+        .Front .navbar .extra h1 {
+            color: aliceblue;
+        }
+
+        /* .Front .navbar .extra .links { */
+        /* color: aliceblue; */
+        /* width: 100%; */
+        /* } */
+        /* body .image-section img { */
+        /* width: 100%; */
+
+        /* } */
+
+        .Front {
+            position: absolute;
+            width: 100%;
+        }
+
+        .Front .navbar .extra .l {
+            color: aliceblue;
+        }
+
+        .Front .navbar .b {
+            margin-top: 10px;
+            height: 40px;
+            width: 150px;
+            border: none;
+            background-color: #3da2f5;
+            color: aliceblue;
+            padding: 10px;
+            font-weight: 600;
+            border-radius: 3px;
+        }
+
+        .main-1 {
+            position: absolute;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 100px 160px;
+            gap: 350px;
+        }
+
+        .main-1 .main-1-1 h1 {
+            font-size: 41px;
+            font-weight: 700;
+            color: aliceblue;
+        }
+
+        .main-1 .main-1-1 p {
+            color: aliceblue;
+        }
+
+        .main-1 .main-1-1 button {
+            margin-top: 20px;
+        }
+
+        .main-1 .main-1-1 .but {
+            height: 40px;
+            width: 120px;
+            margin-right: 5px;
+            padding: 10px;
+            border-radius: 20px;
+            border: none;
+            background-color: #3da2f5;
+            color: aliceblue;
+            font-weight: 600;
+        }
+
+        .main-1 .main-1-1 .but1 {
+            height: 40px;
+            width: 120px;
+            border-radius: 20px;
+            border: none;
+            background-color: transparent;
+            border: 1px solid white;
+            color: aliceblue;
+        }
+
+        .main-1-2 input {
+            height: 25px;
+            width: 150px;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-weight: 500;
+            background-color: #fffbfb;
+            border: 1px solid gray;
+            border-radius: 5px;
+            margin-left: 40px;
+        }
+
+        .main-1-2 .but2 {
+            height: 40px;
+            width: 190px;
+            margin-top: 25px;
+            padding: 13px;
+            border-radius: 5px;
+            border: none;
+            background-color: #3da2f5;
+            color: aliceblue;
+            font-weight: 600;
+            margin-left: 40px;
+        }
+
+        .main-1-2 {
+            background-color: #fffbfb;
+            margin-right:  100px;
+            height: 500px;
+            width: 410px;
+            position: relative;
+            left: 10px;
+            top: 80px;
+            border-radius: 10px;
+        }
+
+        .main-1-2 h5 {
+            margin-left: 35px;
+
+        }
+
+        h3 {
+            margin-left: 70px;
+            position: relative;
+            top: 10px;
+
+        }
+
+        .main-2 {
+            text-align: center;
+            position: relative;
+            top: 800px;
+        }
+
+        .main-2 span {
+            font-size: small;
+            color: lightslategrey;
+        }
+
+        .main-3 {
+            justify-content: center;
+            display: flex;
+            gap: 30px;
+            margin-top: 850px;
+
+        }
+
+        .main-3 img {
+            width: 55px;
+            height: 50px;
+            border-radius: 100%;
+        }
+
+        .main-3 .card .main-3-heading {
+            display: flex;
+            gap: 10px;
+            padding-left: 20px;
+            align-items: center;
+            background-color: #8cc4f2;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            height: 90px;
+            width: 250px;
+            color: #ffffff;
+        }
+
+        .main-3 p {
+            padding-left: 30px;
+            font-size: 11px;
+            color: grey;
+        }
+
+        .main-3 .main-3-main {
+            border: 1px solid #a7d3f7;
+            padding-top: 10px;
+            border-radius: 5px;
+            height: 200px;
+            margin-bottom: 50px;
+        }
+
+        .main-3 .card .special {
+            color: #3da2f5;
+            font-weight: 600;
+        }
+        .main-4 {
+            text-align: center;
+            background-color: rgb(250, 250, 249);
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        .main-4 span {
+            font-size: small;
+            color: lightslategrey;
+        }
+        .main-4 .card .main-4-1 {
+            margin-top: 80px;
+            margin-bottom: 50px;
+            display: flex;
+            text-align: left;
+            border: 1px solid rgb(133, 123, 123);
+            width: 230px;
+            flex-direction: column;
+            height: 160px;
+            padding: 10px;
+            background-color: #ffffff;
+        }
+        .main-4 .main-4-1 .star {
+            height: 50px;
+            width: 100px;
+        }
+        .main-4 .main-4-1 .man {
+            height: 50px;
+            width: 50px;
+            padding-top: 10px;
+            margin-left: 10px;
+        }
+        .main-4 .card {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .main-5 h1 {
+            text-align: center;
+            background-color: #ffffff;
+            padding-top: 50px;
+
+        }
+        .main-5 span {
+            text-align: left;
+            font-size: small;
+            color: lightslategrey;
+        }
+        .main-5 .card {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            margin-left: 100px;
+            margin-right: 100px;
+
+        }
+        .main-5 .card .main-5-main .part-1 img {
+            height: 15px;
+            width: 20px;
+            margin-top: 5px;
+            background-color: transparent;
+        }
+        .main-5 .card .main-5-main {
+            padding: 10px;
+            margin: 20px;
+
+        }
+        .main-5 .first {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        .main-5 .card .main-5-main .part-1 {
+            display: flex;
+        }
+        .main-5 .card .main-5-main .mm {
+
+         margin-left: 20px;
+        }
+        .main-5{
+            margin-bottom: 50px;
+        }
+        .main-6{
+            background-color: aliceblue;
+            height: 140vh;
+        }
+
+        
+
+        .main-6 h1{
+            text-align: center;
+            
+            padding-top: 50px;
+        
+        }
+        .main-6 .first{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            color: gray;
+        }
+        .main-6 .card-6{
+            height: 550px;
+            width: 300px;
+            border: px #3da2f5;
+            
+            background-color: white;
+            
+            text-align: center;
+            border: 1px solid #3da2f5;
+            position: relative;
+            top: 70px;
+
+        }
+        .main-6 .card-6-2 .green{
+
+            height: 40px;
+            width: 40px;
+            margin-right: 200px;
+            border-radius: 100%;
+            margin-top: 0px;
+            
+        }
+        .main-6 .card-6{
+            margin-left: 300px;
+            border-radius: 20px;
+        }
+        .card-6-2 h4{
+            margin-left: 70px;
+            margin-bottom: -40px;
+            position: relative;
+            top: -60px;
+        }
+        .card-6-2  .one{
+            position: relative;
+            right: 30px;
+            
+        }
+        .card-6-2  .two{
+            position: relative;
+            right: 10px;
+           
+            
+        }
+        .main-6 button{
+            background-color: #3da2f5;
+            padding: 10px 90px;
+            border: 0;
+            color: white;
+            border-radius: 5px;
+        }
+        .card-6-1 h3{
+            color: #108aee;
+            margin-top: 50px;
+            position: relative;
+            top: -20px;
+            right: 40px;
+        }
+        .main-6 .card-7{
+            height: 600px;
+            width: 300px;
+            border: px #3da2f5;
+            
+            background-color: black;
+            
+            text-align: center;
+            border: 1px solid #108aee;
+            position: relative;
+            top: -530px;
+            left: 302px;
+            color: white;
+
+        }
+        .main-6 .card-7-2 .green{
+
+           height: 40px;
+           width: 40px;
+           margin-right: 200px;
+           border-radius: 100%;
+           margin-top: 0px;
+
+        }
+        .main-6 .card-7{
+            margin-left: 300px;
+            border-radius: 20px;
+        }
+        .card-7-2 h4{
+            margin-left: 70px;
+            margin-bottom: -40px;
+            position: relative;
+            top: -60px;
+        }
+
+        .card-7-2  .one{
+            position: relative;
+            right: 30px;
+            
+        }
+
+        .card-7-2  .two{
+            position: relative;
+            right: 10px;  
+        }
+        .main-6 button{
+            background-color: #3da2f5;
+            padding: 10px 90px;
+            border: 0;
+            color: white;
+            border-radius: 5px;
+        }
+        .card-7-1 h3{
+            color: #108aee;
+            margin-top: 50px;
+            position: relative;
+            top: -20px;
+            right: 40px;
+        }
+        .main-6 .card-8{
+            height: 560px;
+            width: 300px;
+            border: px #3da2f5;
+            
+            background-color: white;
+            
+            text-align: center;
+            border: 1px solid #108aee;
+            position: relative;
+            top: -1090px;
+            left: 604px;
+           
+
+        }
+        .main-6 .card-8-2 .green{
+
+height: 40px;
+width: 40px;
+margin-right: 200px;
+border-radius: 100%;
+margin-top: 0px;
+
+}
+.main-6 .card-8{
+            margin-left: 300px;
+            border-radius: 20px;
+        }
+
+        .card-8-2 h4{
+            margin-left: 70px;
+            margin-bottom: -40px;
+            position: relative;
+            top: -60px;
+        }
+        .card-8-2  .one{
+            position: relative;
+            right: 30px;
+            
+        }
+
+        .card-8-2  .two{
+            position: relative;
+            right: 10px;  
+        }
+        .main-6 button{
+            background-color: #3da2f5;
+            padding: 10px 90px;
+            border: 0;
+            color: white;
+            border-radius: 5px;
+        }
+        .card-8-1 h3{
+            color: #108aee;
+            margin-top: 50px;
+            position: relative;
+            top: -20px;
+            right: 40px;
+        }
+        .main-7{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 100px;
+            padding-right: 200px;
+            padding-left: 200px;
+            background-color:#1d223e ;
+            height: 300px;
+            color: #ffffff;
+            position: relative;
+            bottom: 1074px;
+        }
+        .main-7 .left h1{ 
+            position: relative;
+            right: 90px;
+            top: -30px;
+        }
+        .main-7 .right{
+            display: flex;
+            align-items: center;
+            position: relative;
+            right: -100px;
+ 
+            width: 50%;
+        }
+        .main-7 input{
+            height: 45px;
+            width: 200px;
+            border: none;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            padding-left: 7px;
+        }
+        .main-7 button{
+            width: 45px;
+            height: 47px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+           background-color: #3da2f5;
+           color: #fffbfb;
+            border: none;
+            padding-left: 20px;
+            margin-left: -2px;
+        }
+        .main-7 span{
+            position: relative;
+            top: -50px;
+            font-size: 13px;
+        }
+        .end{
+            display: flex;
+            justify-content: space-around;
+            padding: 40px;
+            gap: 50px;
+            margin-bottom: 50px;
+        }
+        .end .col{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .end span{
+            font-size: 13px;
+            color: gray;
+
+        }
+        .final{
+      
+            text-align: center;
+        }
+        .final span{
+            font-size: 13px;
+            color: gray;
+            background-color: #fafaf9;
+
+        }
+        .end .col img{
+            height: 30px;
+            width: 90px;
+        }
+        .bhanu{
+            position: relative;
+            top: -1080px;
+        }
+
+
+
+        
+
+
+
+
+        
+
+
+        
+
+
+
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="image-section">
+        <div class="Front">
+            <nav class="navbar">
+                <div class="extra">
+                    <h1>BrandName</h1>
+                    <div class="links">
+                        <a class="l" href="#">Home</a>
+                        <a class="l" href="#">Product</a>
+                        <a class="l" href="#">Pricing</a>
+                        <a class="l" href="#">Contact</a>
+                    </div>
+                </div>
+                <button class="b">Get Quote Now -></button>
+            </nav>
+        </div>
+        <div class="main-1">
+            <div class="main-1-1">
+                <h1>Meet the Best<br> Hospital</h1>
+                <p>We know how large object will act, but thing on small scale</p>
+                <button class="but">Get Quote Now</button>
+                <button class="but1">Learn more</button>
+
+            </div>
+            <div class="main-1-2">
+                <h3>Book Appoinment</h3>
+                <h5>Name*</h5>
+                <input class="first-input" type="text" name="name" placeholder="Full name*" id="#">
+                <h5>Email adress*</h5>
+                <input class="first-input" type="email" name="name" placeholder="example@gmail.com" id="#">
+                <h5>Department*</h5>
+                <input type="text" id="select-input" placeholder="please select" list="options-list">
+    
+                <datalist id="options-list">
+                    <option value="Option 1">
+                    <option value="Option 2">
+                    <option value="Option 3">
+                        <!-- Add more options as needed -->
+                </datalist>
+    
+                <h5>Time*</h5>
+                <input type="text" id="select-input" placeholder="4.00 Avilable" list="options-list">
+    
+                <datalist id="options-list">
+                    <option value="Option 1">
+                    <option value="Option 2">
+                    <option value="Option 3">
+                        <!-- Add more options as needed -->
+                </datalist>
+                <button class="but2">Book Appoinment</button>
+            </div>
+        </div>
+        <div class="main-2">
+            <h1>Leading Medicine</h1>
+            <span>Problems trying to resolve the conflict between<br> the two major realms of classical
+                physics:Newtonian
+                mechanics</span>
+        </div>
+        <div class="main-3">
+            <div class="card">
+                <div class="main-3-heading">
+                    <img src="./assets/WhatsApp Image 2023-07-27 at 09.24.14.jpeg" alt="">
+                    <h5>Emergency case</h5>
+                </div>
+                <div class="main-3-main">
+                    <p>-The best product start with figma</p>
+                    <p>-Design with real data</p>
+                    <p>-Lighting fast prototyping</p>
+                    <p>-Fastest way to organise</p>
+                    <p>-Work at the speed of thought</p>
+                    <p class="special">Learn more</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="main-3-heading">
+                    <img src="./assets/WhatsApp Image 2023-07-27 at 09.24.14.jpeg" alt="">
+                    <h5>cancer Care</h5>
+                </div>
+                <div class="main-3-main">
+                    <p>-The best product start with figma</p>
+                    <p>-Design with real data</p>
+                    <p>-Lighting fast prototyping</p>
+                    <p>-Fastest way to organise</p>
+                    <p>-Work at the speed of thought</p>
+                    <p class="special">Learn more</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="main-3-heading">
+                    <img src="./assets/WhatsApp Image 2023-07-27 at 09.24.14.jpeg" alt="">
+                    <h5>Health Quaries</h5>
+                </div>
+                <div class="main-3-main">
+                    <p>-The best product start with figma</p>
+                    <p>-Design with real data</p>
+                    <p>-Lighting fast prototyping</p>
+                    <p>-Fastest way to organise</p>
+                    <p>-Work at the speed of thought</p>
+                    <p class="special">Learn more</p>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div class="main-4">
+            <h1>Leading Medicine</h1>
+            <span>Problems trying to resolve the conflict between<br> the two major realms of classical physics:Newtonian
+                mechanics
+            </span>
+    
+            <div class="card">
+    
+                <div class="main-4-1">
+                    <img src="./assets/5-star-rating.webp" class="star" alt="">
+                    <span>Slate helps you how see how many more days you need to work to reach your financial goal</span>
+                    <img src="./assets/user.1.png" class="man" alt="man1">
+                </div>
+    
+                <div class="main-4-1">
+                    <img src="./assets/5-star-rating.webp" class="star" alt="">
+                    <span>Slate helps you how see how many more days you need to work to reach your financial goal</span>
+                    <img src="./assets/user.2.png" class="man" alt="man2">
+                </div>
+    
+                <div class="main-4-1">
+                    <img src="./assets/5-star-rating.webp" class="star" alt="">
+                    <span>Slate helps you how see how many more days you need to work to reach your financial goal</span>
+                    <img src="./assets/user.3.png" class="man" alt="man3">
+                </div>
+            </div>
+        </div>
+        <div class="main-5">
+            <h1>FAQ</h1>
+            <span class="first">Problems trying to resolve the conflict between<br> the two major realms of classical
+                physics:Newtonian
+                mechanics
+            </span>
+            <div class="card">
+                <div class="main-5-main">
+                    <div class="part-1">
+                        <img src="./assets//arrow2 png.png" alt="">
+                        the quick fox jumps over <br> the lazy dog
+                    </div>
+                    <div class="mm">
+                        <span>thinngs on very small scale <br> behave like nothing</span>
+                    </div>
+                </div>
+    
+                <div class="main-5-main">
+                    <div class="part-1">
+                        <img src="./assets//arrow2 png.png" alt="">
+                        the quick fox jumps over <br> the lazy dog
+                    </div>
+                    <div class="mm">
+                        <span>thinngs on very small scale <br> behave like nothing</span>
+                    </div>
+                </div>
+                <div class="main-5-main">
+                    <div class="part-1">
+                        <img src="./assets//arrow2 png.png" alt="">
+                        the quick fox jumps over <br> the lazy dog
+                    </div>
+                    <div class="mm">
+                        <span>thinngs on very small scale <br> behave like nothing</span>
+                    </div>
+                </div>
+                <div class="main-5-main">
+                    <div class="part-1">
+                        <img src="./assets//arrow2 png.png" alt="">
+                        the quick fox jumps over <br> the lazy dog
+                    </div>
+                    <div class="mm">
+                        <span>thinngs on very small scale <br> behave like nothing</span>
+                    </div>
+                </div>
+                <div class="main-5-main">
+                    <div class="part-1">
+                        <img src="./assets//arrow2 png.png" alt="">
+                        the quick fox jumps over <br> the lazy dog
+                    </div>
+                    <div class="mm">
+                        <span>thinngs on very small scale <br> behave like nothing</span>
+                    </div>
+                </div>
+                <div class="main-5-main">
+                    <div class="part-1">
+                        <img src="./assets//arrow2 png.png" alt="">
+                        the quick fox jumps over <br> the lazy dog
+                    </div>
+                    <div class="mm">
+                        <span>thinngs on very small scale <br> behave like nothing</span>
+                    </div>
+                </div>
+                <div class="main-5-main">
+                    <div class="part-1">
+                        <img src="./assets//arrow2 png.png" alt="">
+                        the quick fox jumps over <br> the lazy dog
+                    </div>
+                    <div class="mm">
+                        <span>thinngs on very small scale <br> behave like nothing</span>
+                    </div>
+                </div>
+                <div class="main-5-main">
+                    <div class="part-1">
+                        <img src="./assets//arrow2 png.png" alt="">
+                        the quick fox jumps over <br> the lazy dog
+                    </div>
+                    <div class="mm">
+                        <span>thinngs on very small scale <br> behave like nothing</span>
+                    </div>
+                </div>
+                <div class="main-5-main">
+                    <div class="part-1">
+                        <img src="./assets//arrow2 png.png" alt="">
+                        the quick fox jumps over <br> the lazy dog
+                    </div>
+                    <div class="mm">
+                        <span>thinngs on very small scale <br> behave like nothing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-6">
+            <h1>Pricing</h1>
+            <span class="first">Problems trying to resolve the conflict between<br> the two major realms of classical
+                physics:Newtonian
+                mechanics
+            </span>
+            <div class="card-6">
+                <div class="card-6-1">
+                    <h2>FREE</h2>
+                    <span class="secound">Organize across all <br> apps by hand</span>
+                    <h3>0 <sup>$</sup> <sub>per month</sub></h3>
+                </div>
+                <div class="card-6-2">
+                    <div>
+                        <img src="./assets/greeen check.jpg" class="green" alt="">
+                        <h4>Unlimited product update</h4>
+
+                    </div>
+                    <div>
+                        <img src="./assets/greeen check.jpg" class="green" alt="">
+                        <h4>Unlimited product update</h4>
+
+                    </div>
+                    <div>
+                        <img src="./assets/greeen check.jpg" class="green" alt="">
+                        <h4>Unlimited product update</h4>
+
+                    </div>
+                    <div>
+                        <img src="./assets/gray check.png" class="green" alt="">
+                        <h4 class="one">1GB cloud storage</h4>
+                        
+
+                    </div>
+                    <div>
+                        <img src="./assets/gray check.png" class="green" alt="">
+                        <h4 class="two">Email and community  support</h5>
+
+                    </div>
+                    <button class="try"> Try for free</button>
+
+                </div>
+            </div>
+
+            <div class="card-7">
+                <div class="card-7-1">
+                    <h2>STANDARD</h2>
+                    <span class="secound">Organize across all <br> apps by hand</span>
+                    <h3>9.99 <sup>$</sup> <sub>per month</sub></h3>
+                </div>
+                <div class="card-7-2">
+                    <div>
+                        <img src="./assets/greeen check.jpg" class="green" alt="">
+                        <h4>Unlimited product update</h4>
+
+                    </div>
+                    <div>
+                        <img src="./assets/greeen check.jpg" class="green" alt="">
+                        <h4>Unlimited product update</h4>
+
+                    </div>
+                    <div>
+                        <img src="./assets/greeen check.jpg" class="green" alt="">
+                        <h4>Unlimited product update</h4>
+
+                    </div>
+                    <div>
+                        <img src="./assets/greeen check.jpg" class="green" alt="">
+                        <h4 class="one">1GB cloud storage</h4>
+                        
+
+                    </div>
+                    <div>
+                        <img src="./assets/greeen check.jpg" class="green" alt="">
+                        <h4 class="two">Email and community  support</h5>
+
+                    </div>
+                    <button class="try"> Try for free</button>
+
+                </div>
+            </div>
+            <div class="card-8">
+                <div class="card-8-1">
+                    <h2>STANDARD</h2>
+                    <span class="secound">Organize across all <br> apps by hand</span>
+                    <h3>19.99 <sup>$</sup> <sub>per month</sub></h3>
+                </div>
+                <div class="card-8-2">
+                    <div>
+                        <img src="./assets/greeen check.jpg" class="green" alt="">
+                        <h4>Unlimited product update</h4>
+
+                    </div>
+                    <div>
+                        <img src="./assets/greeen check.jpg" class="green" alt="">
+                        <h4>Unlimited product update</h4>
+
+                    </div>
+                    <div>
+                        <img src="./assets/greeen check.jpg" class="green" alt="">
+                        <h4>Unlimited product update</h4>
+
+                    </div>
+                    <div>
+                        <img src="./assets/greeen check.jpg" class="green" alt="">
+                        <h4 class="one">1GB cloud storage</h4>
+                        
+
+                    </div>
+                    <div>
+                        <img src="./assets/greeen check.jpg" class="green" alt="">
+                        <h4 class="two">Email and community  support</h5>
+
+                    </div>
+                    <button class="try"> Try for free</button>
+
+                </div>
+
+
+        </div>
+
+        <div class="main-7">
+            <div class="left">
+                <h1>Get In Touch</h1>
+                <span>The gradual accumulation of information about atomic and <br> samll-scale behavious during the first quater of the 20th</span>
+            </div>
+            <div class="right">
+                <input type="email" name="Email" placeholder="Your Email" id="">
+                <button>Subscribe</button>
+            </div>
+        </div>
+
+        <div class="bhanu">
+            <div class="end">
+                <div class="col">
+                    <h4>Get In Touch</h4>
+                    <span>the quick fox jumps over the lazy dog</span>
+    
+                    <img src="./assets/icon png.png" alt="">
+                </div>
+                <div class="col">
+                    <h4>Comapny info</h4>
+                    <span>About us</span>
+                    <span>Carrier</span>
+                    <span>We are hiring</span>
+                    <span>Blog</span>
+                </div>
+                <div class="col">
+                    <h4>Features</h4>
+                    <span>Business Marketing</span>
+                    <span>User Analytic</span>
+                    <span>Live Chat</span>
+                    <span>Unlimited Support</span>
+                </div>
+                <div class="col">
+                    <h4>Resourses</h4>
+                    <span>IOS &Android</span>
+                    <span>Watch a Demo</span>
+                    <span>Customers</span>
+                    <span>Api</span>
+                </div>
+            </div>
+            <div class="final">
+                <span>Made With Love By Figmaland All Right Reserved</span>
+            </div>
+    
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
